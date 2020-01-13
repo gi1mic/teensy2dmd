@@ -121,5 +121,5 @@ Power and HUB75 Interconnect
 
 # Notes
 The Teensy 3.6 is required due to the extra memory it provides. You can get away with a Teensy3.2 if you only using
-a single 64x32 panel but you will then need to attach an SD card in someway. The Teensy4.0 is not compatible with the Smartmatrix library.
+a single 64x32 panel but you will need to physically attach a SD card and modify the code for the correct chip select (CS). The Teensy4.0 is not compatible with the Smartmatrix library.
 
