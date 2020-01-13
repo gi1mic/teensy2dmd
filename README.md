@@ -27,7 +27,7 @@ You can also add animated text messages over the animated GIF's if you so desire
 use this feature to create a digital clock function. This would be pretty easy to implement but I'll leave that for another
 day.
 
-
+Example static GIF displayed on the panels
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/street-fighter.jpg " Example static GIF displayed on the panels")
 
 
@@ -64,8 +64,9 @@ Simply plug the Teensy 3.6 into the SmartmatrixV4 card. Then plug the Smartmatri
 Then connect the HUB75 output socket from the first panel to the input socket on the second panel using the ribbon cable that came with the panels.
 Finally power the both panels using a 5V 3A power supply using the power cable that came with the panels. 
 
+Installed Teensy 3.6 and SmartMatrixV4 HW
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Installed%20Hardware.JPG " Installed Teensy 3.6 and SmartMatrixV4 HW")
 
-![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Installed%20Hardware.JPG " Teensy 3.6 and SmartMatrixV4 HW install")
-
-![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Installed%20Hardware.JPG " Power and HUB75 Interconnect")
+Power and HUB75 Interconnect
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Pwr%20%26%20interconnect.jpg " Power and HUB75 Interconnect")
 
