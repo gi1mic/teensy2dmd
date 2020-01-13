@@ -29,7 +29,7 @@ use this feature to create a digital clock function. This would be pretty easy t
 day.
 
 
-Implemented Commands:
+###Implemented Commands:
 
 Teensy2DMD V1.0 - Transfer rate: 57600
 Available Commands:
@@ -54,9 +54,14 @@ TF       - Set text font (default font3x5) - alternate TFONT
 TL       - Set text loop count (default 1) - alternate TLOOP
 TOL      - Set text left start offset - alternate LEFTOFFSET
 TOT      - Set text top offset - alternate TOPOFFSET
-<<<<<<< HEAD
 
 
-=======
- 
->>>>>>> 77f1c767ea18fcfe9565479780ec63b98516b542
+
+###Hardware
+Simply plug the Teensy 3.6 into the SmartmatrixV4 card. Then plug the Smartmatrix card into the HUB75 input socket on the rear of the LED panel.
+Then connect the HUB75 output socket from the first panel to the input socket on the second panel using the ribbon cable that came with the panels.
+Finally power the both panels using a 5V 3A power supply using the power cable that came with the panels. 
+
+
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Installed%20Hardware.JPG " Teensy 3.6 and SmartMatrixV4 HW install")
+
