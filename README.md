@@ -49,6 +49,7 @@ Photo of a static GIF displayed on the panels
 
 
 Simulated example animated GIF
+
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Defender.gif " Example animated GIF")
 
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/barbarian.gif " Example animated GIF")
