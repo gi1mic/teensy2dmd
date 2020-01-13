@@ -4,13 +4,16 @@ Teensy LED Smartmatrix display for an animated gif Arcade Marquee or text displa
 
 This is a project to create a low cost animated 128x32 LED display for the marquee of a MAME Arcade cabinet.
 
+You can change the defines if you only want to drive a single 64x32 panel and I have tested it using four 64x32 
+panels with a simple code change.
+
 The hardware consists of:
 
-  two daisy chained 64x32 P5 Led panels,
-  a 5V 3A mains power supply for the panels,
-  a Teensy3.6,
-  a SmartmatrixV4 board providing the interconnect between the teensey3.6 and the HUB75 interface used by the LED panels
-  and a SD card
+  2 x 64x32 P5 Led panels
+  1 x 5V 3A mains power supply (for the panels)
+  1 x Teensy3.6
+  1 x SmartmatrixV4 (providing the interconnect between the teensey3.6 and the HUB75 interface used by the LED panels
+  1 x SD card
 
 The software is  a merger of the Animated GIF example from the smartmatrixV4 library and the Arduino zmodem example see:
 	https://github.com/pixelmatix/SmartMatrix
@@ -22,6 +25,7 @@ The code allows the Teensy to process a simple command line protocol allowing a 
 a SD card fitted in the Teensy SD slot, upload and download files using the ZMODEM protocol and to display
 animated GIF's on the attached LED panels. Displayed GIF files should have a resolution of 132x64 to match the
 display panels.
+
 
 You can also add animated text messages over the animated GIF's if you so desire. Hardware such as the raspberrypi2dmd
 use this feature to create a digital clock function. This would be pretty easy to implement but I'll leave that for another
@@ -91,4 +95,9 @@ Installed Teensy 3.6 and SmartMatrixV4 HW
 
 Power and HUB75 Interconnect
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Pwr%20%26%20interconnect.jpg " Power and HUB75 Interconnect")
+
+
+# Notes
+The Teensy 3.6 is required due to the extra memory it provides. You can get away with a Teensy3.2 if you only using
+a single 64x32 panel but you will then need to attach an SD card in someway. The Teensy4.0 is not compatible with the Smartmatrix library.
 
