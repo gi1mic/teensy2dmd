@@ -2,7 +2,7 @@
 Teensy LED Smartmatrix display for an animated GIF Arcade Marquee or text display
 
 
-This is a project to create a low cost animated 128x32 LED display for the marquee of a full-size MAME Arcade cabinet.
+This is a project to create a low cost animated 128x32 LED display for the marquee of a full-size MAME Arcade cabinet. The provided code allows the Teensy to process a simple command line protocol to browse the contents of the Teensy SD card, upload and download files using the ZMODEM protocol, change directories, display text messages and display animated GIF's on the attached LED panels. Displayed GIF's should have a resolution of 132x64 to match the attached panels.
 
 
 # Background
@@ -17,38 +17,40 @@ I did have a look at using the Teensy as an MTP device, i.e. it would appear on 
 
 Since then I have implemented a few changes like switching to the SDFAT libs for long filename support and implemented some commands to allow for overlay text display, the ability to display files from the current directory and a random display function that works on the currently active directory.
 
-While the code is configured for a 128x32 display it is only a #define change to set it up for a single 64x32 panel. I have also tested it using a 256x32 pixel display using four 64x32 panels. This requires "const uint8_t" defining "kMatrixWidth" to be changes to "const uint16_t".
+Since starting this I discovered various PROCESSOR2dmd systems. Most based around the raspberry-pi. Some of these implement clocks using animated backgrounds. It would be easy to add a clock feature to this code using the overlay text but but I don't need it for my application.
 
-
-# What’s required
-
-  2 x 64x32 P5 Led panels
-  1 x 5V 3A mains power supply (to power the panels)
-  1 x Teensy3.6 (Smaller boards don't have enough RAM)
-  1 x SmartmatrixV4 interface
-  1 x micro SD card
-
-The software is  a merger of the Animated GIF example from the smartmatrixV4 library and the Arduino zmodem example see:
-	https://github.com/pixelmatix/SmartMatrix
-	https://github.com/ecm-bitflipper/Arduino_ZModem
-for more info.
-
-
-The code allows the Teensy to process a simple command line protocol allowing a user to browse the contents of
-a SD card fitted in the Teensy SD slot, upload and download files using the ZMODEM protocol and to display
-animated GIF's on the attached LED panels. Displayed GIF files should have a resolution of 132x64 to match the
-display panels.
-
-
-You can also add animated text messages over the animated GIF's if you so desire. Hardware such as the raspberrypi2dmd
 use this feature to create a digital clock function. This would be pretty easy to implement but I'll leave that for another
 day.
+
+While the code is configured for a 128x32 display it is only a #define change to set it up for a single 64x32 panel. I have also tested it using a 256x32 pixel display using four 64x32 panels. This requires "const uint8_t" defining "kMatrixWidth" to be changes to "const uint16_t".
+
+Original Code source
+
+	https://github.com/pixelmatix/SmartMatrix
+	
+	https://github.com/ecm-bitflipper/Arduino_ZModem
+
+
+# What’s physically required
+
+  2 x 64x32 P5 Led panels
+  
+  1 x 5V 3A mains power supply (to power the panels)
+  
+  1 x Teensy3.6 (Smaller boards don't have enough RAM)
+ 
+  1 x SmartmatrixV4 interface
+ 
+  1 x micro SD card
+
+
+
 
 Example static GIF displayed on the panels
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/street-fighter.jpg " Example static GIF displayed on the panels")
 
 
-# Implemented Commands:
+# Implemented Commands (may change):
 
 For testing you can use the Arduino IDE serial monitor to communicate with the programmed board at 57600 baud. But I highly recommend using "Tetra Term" for windows for more advanced testing. This is a free terminal emulator which supports uploading and downloading files using the ZMODEM protocol.
 
@@ -102,7 +104,7 @@ Once connected type "help" and you should see the following:
 	TOT      - Set text top offset - alternate TOPOFFSET
 
 
-# Getting GIF's for your SD card
+# GIF's for your SD card
 As a starting point there are 600 excellent free 128x32 animations made by eLLuiGi available from http://www.neo-arcadia.com/forum/viewtopic.php?f=14&t=67065#p1233644
 He has a lot more that can be purchased for a small donation.
 
