@@ -2,7 +2,6 @@
 Teensy LED Smartmatrix display for an animated gif Arcade Marquee or text display
 
 
-
 This is a project to create a low cost animated 128x32 LED display for the marquee of a MAME Arcade cabinet.
 
 The hardware consists of:
@@ -29,7 +28,10 @@ use this feature to create a digital clock function. This would be pretty easy t
 day.
 
 
-###Implemented Commands:
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/street-fighter.jpg " Example static GIF displayed on the panels")
+
+
+# Implemented Commands:
 
 Teensy2DMD V1.0 - Transfer rate: 57600
 Available Commands:
@@ -57,11 +59,13 @@ TOT      - Set text top offset - alternate TOPOFFSET
 
 
 
-###Hardware
+# Hardware
 Simply plug the Teensy 3.6 into the SmartmatrixV4 card. Then plug the Smartmatrix card into the HUB75 input socket on the rear of the LED panel.
 Then connect the HUB75 output socket from the first panel to the input socket on the second panel using the ribbon cable that came with the panels.
 Finally power the both panels using a 5V 3A power supply using the power cable that came with the panels. 
 
 
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Installed%20Hardware.JPG " Teensy 3.6 and SmartMatrixV4 HW install")
+
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Installed%20Hardware.JPG " Power and HUB75 Interconnect")
 
