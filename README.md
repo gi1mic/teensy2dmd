@@ -27,6 +27,9 @@ Original sources:
 	https://github.com/pixelmatix/SmartMatrix
 	
 	https://github.com/ecm-bitflipper/Arduino_ZModem
+	
+	
+	The panels are not fitted but this short video should give an idea of the final intention https://youtu.be/MTyskXJbor0
 
 
 # Physical requirements
