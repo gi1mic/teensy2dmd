@@ -80,7 +80,7 @@ Once connected type "help" and you should see the following:
 
 	DIR      - List files in current working directory - alternate LS
 
-	DIS <gif>- Display the gif (from the gifs directory)
+	DIS <gif>- Display the gif in current dir
 
 	PWD      - Print current working directory
 

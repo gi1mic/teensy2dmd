@@ -130,7 +130,7 @@ void help(void)
   DSERIALprintln(F("HELP     - Print this list of commands")); DSERIAL.flush();
   DSERIALprintln(F("BRI      - Sets the brightness 0 - 255 (default)")); DSERIAL.flush();
   DSERIALprintln(F("DIR      - List files in current working directory - alternate LS")); DSERIAL.flush();
-  DSERIALprintln(F("DIS <gif>- Display the gif (from the gifs directory)")); DSERIAL.flush();
+  DSERIALprintln(F("DIS <gif>- Display the gif in current working directory")); DSERIAL.flush();
   DSERIALprintln(F("PWD      - Print current working directory")); DSERIAL.flush();
   DSERIALprintln(F("CD       - Change current working directory")); DSERIAL.flush();
   DSERIALprintln(F("DEL file - Delete file - alternate RM")); DSERIAL.flush();
