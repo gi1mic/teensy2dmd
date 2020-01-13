@@ -34,27 +34,49 @@ Example static GIF displayed on the panels
 # Implemented Commands:
 
 Teensy2DMD V1.0 - Transfer rate: 57600
+
 Available Commands:
+
 HELP     - Print this list of commands
+
 BRI      - Sets the brightness 0 - 255 (default)
+
 DIR      - List files in current working directory - alternate LS
+
 DIS <gif>- Display the gif (from the gifs directory)
+
 PWD      - Print current working directory
+
 CD       - Change current working directory
+
 DEL file - Delete file - alternate RM
+
 MD  dir  - Create dir - alternate MKDIR
+
 RD  dir  - Delete dir - alternate RMDIR
+
 RND      - Display random images - alternate RANDOM
+
 SZ  file - Send file from Teensy SD to terminal (* = all files)
+
 RZ       - Receive a file from terminal to Teensy SD(Hyperterminal sends this
+
            automatically when you select Transfer->Send File...)
+
 TXT      - Define displayed text - alternate TEXT
+
 TM       - Set text mode  - alternate TMODE
+
            Options - bounceForward, bounceReverse, stopped, off, wrapForwardFromLeft
+
 TF       - Set text font (default font3x5) - alternate TFONT
+
            Options - font3x5, font5x7, font6x10, font8x13, gohufont11, gohufont11b
+
 TL       - Set text loop count (default 1) - alternate TLOOP
+
 TOL      - Set text left start offset - alternate LEFTOFFSET
+
 TOT      - Set text top offset - alternate TOPOFFSET
 
 
