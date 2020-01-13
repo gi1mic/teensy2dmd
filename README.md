@@ -55,4 +55,3 @@ TL       - Set text loop count (default 1) - alternate TLOOP
 TOL      - Set text left start offset - alternate LEFTOFFSET
 TOT      - Set text top offset - alternate TOPOFFSET
  
-
