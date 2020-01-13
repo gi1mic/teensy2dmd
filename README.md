@@ -44,8 +44,22 @@ Original sources:
 
 
 
-Example static GIF displayed on the panels
+Photo of a static GIF displayed on the panels
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/street-fighter.jpg " Example static GIF displayed on the panels")
+
+
+Simulated example animated GIF
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Defender.gif " Example animated GIF")
+
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/barbarian.gif " Example animated GIF")
+
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/donkeykong03.gif " Example animated GIF")
+
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/gameover.gif " Example animated GIF")
+
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/insertcoin.gif " Example animated GIF")
+
+![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/mariobad.gif " Example animated GIF")
 
 
 # Implemented Commands (may change):
