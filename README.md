@@ -137,6 +137,24 @@ Power and HUB75 Interconnect
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Pwr%20%26%20interconnect.jpg " Power and HUB75 Interconnect")
 
 
+# Example DOS bat file (for DOS and MS Windows)
+You will need to change the com port, filename and directory in the following example to suit your own situation
+
+	@echo off
+
+	REM Change the following port for your hardware (you can manually use the dos "mode" command to find it)
+	set PORT=com52
+
+	REM configure the com port - you should not need to change this 
+	mode %PORT%: baud=57600 parity=n data=8 stop=1 xon=off
+
+	REM Change into the directory "/arcade" on the micro SD card - again change for your needs 
+	echo cd /arcade > \\.\%PORT%:
+
+	REM Display the file yoshi.gif from the current active directory again change for your needs
+	echo dis yoshi.gif > \\.\%PORT%:
+
+
 # Notes
 The Teensy 3.6 is required due to the extra memory it provides. You can get away with a Teensy3.2 if you only using
 a single 64x32 panel but you will need to physically attach a SD card and modify the code for the correct chip select (CS). The Teensy4.0 is not compatible with the Smartmatrix library.
