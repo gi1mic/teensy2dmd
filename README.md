@@ -137,7 +137,7 @@ Power and HUB75 Interconnect
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Pwr%20%26%20interconnect.jpg " Power and HUB75 Interconnect")
 
 
-# Example DOS bat file (for DOS and MS Windows)
+# Example script file (for DOS and MS Windows)
 You will need to change the com port, filename and directory in the following example to suit your own situation
 
 	@echo off
@@ -154,6 +154,22 @@ You will need to change the com port, filename and directory in the following ex
 	REM Display the file yoshi.gif from the current active directory again change for your needs
 	echo dis yoshi.gif > \\.\%PORT%:
 
+
+For Linux use something like (Untested)
+
+	#!/bin/bash
+	
+	# Change to match your USB serial port (you may need to change the port permissions to gain access)
+	TTY=/dev/ttyUSB0
+
+	# Set the serial port baud rate
+	stty -F "${TTY}" 57600
+	
+	# Change into the directory "/arcade" on the micro SD card - again change for your needs 
+	cat cd /arcade > "${TTY}"
+	
+	# Display the file yoshi.gif from the current active directory again change for your needs
+	cat dis yoshi.gif > "${TTY}"
 
 # Notes
 The Teensy 3.6 is required due to the extra memory it provides. You can get away with a Teensy3.2 if you only using
