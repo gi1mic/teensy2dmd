@@ -36,7 +36,7 @@ The panels are not fitted but this short video should give an idea of the final 
 
   2 x 64x32 P5 Led panels
   
-  1 x 5V 3A mains power supply (to power the panels)
+  1 x 5V 3A (3A or larger, 5A would be better) mains power supply (to power the panels).
   
   1 x Teensy3.6 (Smaller boards don't have enough RAM)
  
