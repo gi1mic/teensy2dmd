@@ -137,8 +137,8 @@ Power and HUB75 Interconnect
 ![alt text](https://github.com/gi1mic/teensy2dmd/blob/master/photos/Pwr%20%26%20interconnect.jpg " Power and HUB75 Interconnect")
 
 
-# Example script file (for DOS and MS Windows)
-You will need to change the com port, filename and directory in the following example to suit your own situation
+# Example script files 
+For DOS and MS Windows you can create a simple BAT file containing the following. Of course you will need to change the com port, filename and directory in the following example to suit your own needs
 
 	@echo off
 
@@ -155,7 +155,7 @@ You will need to change the com port, filename and directory in the following ex
 	echo dis yoshi.gif > \\.\%PORT%:
 
 
-For Linux use something like (Untested)
+For Linux you can create a Bash script something like (Untested)
 
 	#!/bin/bash
 	
